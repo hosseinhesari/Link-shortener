@@ -1,0 +1,11 @@
+.items{
+    margin: 10px;
+}
+.items a{
+    text-decoration: none;
+    color: black;
+}
+
+.items a:hover{
+    color: rgba(20, 17, 17, 0.562);
+}

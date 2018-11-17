@@ -1,0 +1,7 @@
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 10px 25px 10px 25px;
+    
+}

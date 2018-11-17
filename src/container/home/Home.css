@@ -1,0 +1,61 @@
+.home{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.home div{
+    margin: 15px;
+    width: 25%;
+}
+
+.home div h2 {
+    align-items: center;
+    padding-bottom: 14px;
+    font-size: 26px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 1em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    color: #757575;
+}
+
+.home div h2 .icon-link {
+    color: #29b6f6;
+    background-color: #dceff8;
+    margin-right: 8px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.home div h2 .icon-track {
+    color: #ba68c8;
+    background-color: #ede7f6;
+    padding: 10px;
+    font-size: 27px;
+    margin-right: 8px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.home div h2 .icon-pepole{
+    color: #9ccc65;
+    background-color: rgb(233, 240, 225);
+    margin-right: 8px;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    user-select: none;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .col-3 {
+        width: 100%;
+       
+    }
+}

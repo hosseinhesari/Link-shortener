@@ -1,0 +1,25 @@
+.register {
+    display: block;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 0;
+    width: 330px;
+    margin: 0 auto 100px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+
+}
+.register form{
+    padding: 1.25rem 2rem 1.25rem 1.25rem;
+    max-width: 360px;
+}
+.title-register{
+    margin-bottom: .75rem;
+}
+.register form div{
+    margin-bottom: 1rem;
+}
+
+
+
+

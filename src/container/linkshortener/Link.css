@@ -1,0 +1,40 @@
+
+.link-color{
+    background-color: blue;
+    height: 185px;
+}
+
+ .link-send {
+    padding-top: 20px;
+    margin-left: 80px;
+}
+
+.link .link-send label{
+
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.link .link-send input {
+     width: 70%;
+     border-top-right-radius: 0%;
+     border-bottom-right-radius: 0%;
+     
+}
+
+.link .link-send button {
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+   width: 90px;
+}
+
+.link .link-send h6 {
+    margin-top: 0%; 
+    color: aliceblue;
+    font-size: .9rem;
+    font-family: initial;
+}
+
+.link .link-send div{
+    display: flex;
+}
