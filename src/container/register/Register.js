@@ -70,7 +70,7 @@ class Register extends Component {
             email: this.state.email,
             password: this.state.password,
         }, function () {
-            alert("DONE");
+            alert("register");
         });
 
         const isValide = this.validate();

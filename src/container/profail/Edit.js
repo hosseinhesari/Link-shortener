@@ -5,6 +5,8 @@ import Input from '../../component/form/item/input/Input';
 import Label from '../../component/form/item/label/Label';
 import Button from '../../component/form/item/button/Button';
 import * as user from "../../store/action/user";
+import './Edit.css';
+
 
 
 const initiaState = {
@@ -15,7 +17,7 @@ const initiaState = {
 
 class Edit extends Component {
 
-
+    
 
     constructor(props){
         super(props);
@@ -49,15 +51,15 @@ class Edit extends Component {
             <div>
                 <NavigationItems />
                 <Color />
-                <div>
+                <div className="edit">
                     <form onSubmit={this.handleSubmit} >
-                        <div className="title-register">
+                        <div className="title-edit">
                             Register
                     </div>
                         <hr />
                         <div>
                             <Label htmlFor="name">Name</Label>
-                            <Input type="name"  onChange={this.handleChange} name="name" placeholder="enter name" />
+                            <Input type="name"  onChange={this.handleChange} name="name" placeholder="enter name"  />
                         </div>
                         <div>
                             <Label htmlFor="email" >Email address</Label>
@@ -83,4 +85,7 @@ class Edit extends Component {
     }
 }
 
-export default Edit;
+
+
+export default (Edit);
+

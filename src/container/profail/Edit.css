@@ -1,4 +1,4 @@
-.edit {
+.register {
     display: block;
     justify-content: center;
     flex-direction: column;
@@ -9,14 +9,14 @@
     border-radius: .25rem;
 
 }
-.edit form{
+.register form{
     padding: 1.25rem 2rem 1.25rem 1.25rem;
     max-width: 360px;
 }
-.title-register{
+.title-edit{
     margin-bottom: .75rem;
 }
-.edit form div{
+.register form div{
     margin-bottom: 1rem;
 }
 

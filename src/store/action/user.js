@@ -34,8 +34,10 @@ export const delete_user = (data, callback) => {
 };
 
 export const put_user = (data, callback) => {
-    console.log(data);
     axios.put(`${MAIN_URL}/user/${data.id}`,data).then(function (res){
         callback();
     });
 };
+
+
+

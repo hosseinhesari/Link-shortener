@@ -1,3 +1,42 @@
-Table{
-    min-width: 500;
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px black solid;
+    
 }
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+} 
+
+td a {
+    text-decoration: none;
+
+}
+
+td a:hover{
+    color: black;
+    font-size: 15px;
+}
+
+.table{
+    display: block;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto; 
+    border: 1px rgb(145, 120, 120) solid;
+    width: 50%;
+    text-align: center;
+
+}
+.react-bs-table {
+    border: none;
+    
+}
+
+
