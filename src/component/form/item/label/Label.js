@@ -6,7 +6,7 @@ class Label extends Component {
     render() {
         return (
 
-            <label htmlFor={this.props.htmlFor} className="label">{this.props.children}</label>
+            <label htmlFor={this.props.htmlFor} className={this.props.className}>{this.props.children}</label>
         );
     }
 

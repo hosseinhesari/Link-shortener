@@ -54,24 +54,24 @@ class Edit extends Component {
                 <div className="edit">
                     <form onSubmit={this.handleSubmit} >
                         <div className="title-edit">
-                            Register
+                            Edit User
                     </div>
                         <hr />
                         <div>
-                            <Label htmlFor="name">Name</Label>
-                            <Input type="name"  onChange={this.handleChange} name="name" placeholder="enter name"  />
+                            <Label htmlFor="name">Name :</Label>
+                            <Input className="col-12" type="name"  onChange={this.handleChange} name="name" placeholder="enter name"  />
                         </div>
                         <div>
-                            <Label htmlFor="email" >Email address</Label>
-                            <Input name="email"  onChange={this.handleChange}  placeholder="enter email" />
+                            <Label htmlFor="email" >Email address :</Label>
+                            <Input className="col-12" name="email"  onChange={this.handleChange}  placeholder="enter email" />
                         </div>
                         <div>
-                            <Label htmlFor="Password">Password</Label>
-                            <Input type="password"  onChange={this.handleChange} name="password" placeholder="password" />
+                            <Label htmlFor="Password">Password :</Label>
+                            <Input className="col-12" type="password"  onChange={this.handleChange} name="password" placeholder="password" />
                         </div>
                         <div>
-                            <Label htmlFor="password_confirm">Confirm Password</Label>
-                            <Input type="password" onChange={this.handleChange} name="password_confirm" placeholder="confirm-password" />
+                            <Label htmlFor="password_confirm">Confirm Password :</Label>
+                            <Input className="col-12" type="password" onChange={this.handleChange} name="password_confirm" placeholder="confirm-password" />
                         </div>
 
                         <div className="buttom">

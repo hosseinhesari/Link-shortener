@@ -11,7 +11,7 @@ class Home extends Component {
                 <NavbarItems />
                 <Color/>
                 <div className="home">
-                    <div className="col-3"><h2><i class="material-icons icon-link">link</i>Shorten</h2>Hello Shorten your URL so it’s ready to be shared everywhere</div>
+                    <div className="col-3"><h2><i class="material-icons icon-link">link</i>Shorten</h2><p>Hello Shorten your URL so it’s ready to be shared everywhere</p></div>
                     <div className="col-3"><h2><i class="material-icons icon-track">trending_up</i>Track</h2>Analytics help you know where your clicks are coming from</div>
                     <div className="col-3"><h2><i class="material-icons icon-pepole">people</i>Learn</h2>Understand and visualize your audience</div>
                 </div>

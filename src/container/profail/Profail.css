@@ -1,9 +1,14 @@
 
+ .table {
+     display: flex;
+     justify-content: center; 
+ }
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
     border: 1px black solid;
+    width: 50%;
     
 }
 
@@ -24,19 +29,23 @@ td a:hover{
     font-size: 15px;
 }
 
-.table{
-    display: block;
-    text-align: center;
-    margin-left:auto;
-    margin-right: auto; 
-    border: 1px rgb(145, 120, 120) solid;
-    width: 50%;
-    text-align: center;
 
-}
 .react-bs-table {
     border: none;
     
 }
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    /* For mobile phones: S , M */
+     table .id { 
+        display: none;
+    }
+    table .name {
+        display: none;
+    }
+    
+}
+
+  
 
 

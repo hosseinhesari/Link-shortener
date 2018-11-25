@@ -10,12 +10,12 @@ import './Login.css';
 
 class Login extends Component {
 
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state ={
-            email : '',
-            password : '',
-            
+        this.state = {
+            email: '',
+            password: '',
+
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -42,12 +42,12 @@ class Login extends Component {
                         </div>
                         <hr />
                         <div>
-
-                            <Input type="email" value={this.state.email} onChange={this.handleChange} name="email" placeholder="enter email" />
+                            <Label htmlFor="Email">Email :</Label>
+                            <Input className="col-12" type="email" value={this.state.email} onChange={this.handleChange} name="email" placeholder="enter email" />
                         </div>
                         <div>
-                            <Label htmlFor="Password">Password</Label>
-                            <Input type="password" value={this.state.password} onChange={this.handleChange} name="password" placeholder="password" />
+                            <Label htmlFor="Password">Password :</Label>
+                            <Input className="col-12" type="password" value={this.state.password} onChange={this.handleChange} name="password" placeholder="password" />
                         </div>
                         <div className="buttom">
                             <Button type="submit" >Sign in</Button>

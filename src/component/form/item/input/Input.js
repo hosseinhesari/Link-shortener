@@ -5,7 +5,7 @@ class Input extends Component {
 
     render(){
         return(
-            <input className="input" type={this.props.type} name={this.props.name} value={this.props.value} onChange={this.props.onChange} placeholder={this.props.placeholder} autoComplete="off" />
+            <input className={this.props.className} type={this.props.type} name={this.props.name} value={this.props.value} onChange={this.props.onChange} placeholder={this.props.placeholder} autoComplete="off" />
         );
     }
 }

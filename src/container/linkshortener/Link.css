@@ -1,40 +1,101 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
-.link-color{
-    background-color: blue;
-    height: 185px;
+.container {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
- .link-send {
-    padding-top: 20px;
-    margin-left: 80px;
-}
-
-.link .link-send label{
-
+.color label {
+    width: 60%;
     color: white;
     font-size: 30px;
     font-weight: lighter;
 }
-.link .link-send input {
-     width: 70%;
-     border-top-right-radius: 0%;
-     border-bottom-right-radius: 0%;
-     
+
+.color div {
+    display: flex;
+    justify-content: center;
+} 
+
+.color input {
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
 }
 
-.link .link-send button {
+.color button {
     border-top-left-radius: 0%;
     border-bottom-left-radius: 0%;
-   width: 90px;
 }
 
-.link .link-send h6 {
+.color h6 {
+    width: 60%;
     margin-top: 0%; 
     color: aliceblue;
     font-size: .9rem;
     font-family: initial;
 }
 
-.link .link-send div{
-    display: flex;
+@media only screen and (min-width:320px) and (max-width: 424px) {
+    /* For mobile phones: S , M */
+    .col-6 {
+        width: 100%;
+    }
+    .col-1 {
+      width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+    .color label {
+        width: 100%;
+    }
+    .color h6 {
+        width: 100%;
+    }
+
 }
+
+@media only screen and (min-width:425px) and (max-width: 768px) {
+    /* For mobile phones: L , T */
+    .col-6 {
+        width: 70%;
+    }
+    .col-1 {
+      width: 30%;
+    }
+    .color label {
+        width: 100%;
+    }
+    .color h6 {
+        width: 100%;
+    }
+
+}
+@media only screen and (min-width:769px) and (max-width:2560px) {
+    /* For labtop ,labtop L , XL */
+    .col-6 {
+        width: 51.5%;
+    }
+    .col-1 {
+      width: 8.33%;
+    }
+}
+
+
+
+
+

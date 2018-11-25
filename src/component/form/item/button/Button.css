@@ -1,5 +1,4 @@
-.button{
-    display: block;
+button{
     width: 100%;
     color: #fff;
     background-color: #007bff;
@@ -9,6 +8,6 @@
     line-height: 1.6;
     border-radius: .25rem;
 }
-.button:hover {
-    background-color: rgb(39, 39, 207);
+button:hover {
+   background-color: rgb(39, 39, 207);
  }

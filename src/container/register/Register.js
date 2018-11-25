@@ -93,22 +93,22 @@ class Register extends Component {
                     </div>
                         <hr />
                         <div>
-                            <Label htmlFor="name">Name</Label>
-                            <Input type="name" value={this.state.name} onChange={this.handleChange} name="name" placeholder="enter name" />
+                            <Label htmlFor="name">Name :</Label>
+                            <Input className="col-12" type="name" value={this.state.name} onChange={this.handleChange} name="name" placeholder="enter name" />
                         </div>
                         <Error>{this.state.nameError}</Error>
                         <div>
-                            <Label htmlFor="email" >Email address</Label>
-                            <Input value={this.state.email} onChange={this.handleChange} name="email" placeholder="enter email" />
+                            <Label htmlFor="email" >Email address :</Label>
+                            <Input className="col-12" value={this.state.email} onChange={this.handleChange} name="email" placeholder="enter email" />
                         </div>
                         <Error>{this.state.emailError}</Error>
                         <div>
-                            <Label htmlFor="Password">Password</Label>
-                            <Input type="password" value={this.state.password} onChange={this.handleChange} name="password" placeholder="password" />
+                            <Label htmlFor="Password">Password :</Label>
+                            <Input className="col-12" type="password" value={this.state.password} onChange={this.handleChange} name="password" placeholder="password" />
                         </div>
                         <div>
-                            <Label htmlFor="password_confirm">Confirm Password</Label>
-                            <Input type="password" value={this.state.password_confirm} onChange={this.handleChange} name="password_confirm" placeholder="confirm-password" />
+                            <Label htmlFor="password_confirm">Confirm Password :</Label>
+                            <Input className="col-12" type="password" value={this.state.password_confirm} onChange={this.handleChange} name="password_confirm" placeholder="confirm-password" />
                         </div>
                         <Error>{this.state.passwordError}</Error>
                         <div className="buttom">

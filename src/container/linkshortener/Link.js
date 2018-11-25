@@ -16,64 +16,62 @@ class Link extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            link : ''
+            link: ''
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleChange = this.handleChange.bind(this);
     }
 
-    handleChange(event){
-        this.setState({link : event.target.value});
-        
+    handleChange(event) {
+        this.setState({ link: event.target.value });
+
     }
 
-    handleSubmit(event){
+    handleSubmit(event) {
         event.preventDefault();
         action.add_link({
             link: this.state.link
-        }, function() {
+        }, function () {
             alert(" create link");
         });
     }
 
     render() {
-        
+
         return (
-            <div className="link">
-                <NavigationItems />
-                <div className="link-color">
-                    <form className="link-send" onSubmit={this.handleSubmit}>
-                        <Label htmlFor="link">Simplify your links</Label>
-                        <div>
-                            <Input type="text" value={this.state.link} onChange={this.handleChange} placeholder="Your orginal URL here" />
-                            <div>
-                                <Button type="submit">Shorten</Button>
-                            </div>
-                        </div>
-                        <h6 className="label">All goo.gl URLs and click analytics are public and can be accessed by anyone</h6>
-                    </form>
-                </div>
+            <div>
+            <NavigationItems />
+            <div className="color">
+                <form onSubmit={this.handleSubmit}>
+                    <Label className="container">Simplify your links</Label>
+                    <div className="row">
+                        <Input className="col-6" type="text" value={this.state.link} onChange={this.handleChange} placeholder="Your orginal URL here" />
+                        <Button className="col-1" type="submit">Shorten</Button>
+                    </div>
+                    <h6 className="container">All goo.gl URLs and click analytics are public and can be accessed by anyone</h6>
+                </form>
             </div>
+        </div>
         );
     }
 }
 
-const mapStateToProps = state => {    
+const mapStateToProps = state => {
     return {
         list: state.link_list[0]
     };
-  };
-  
-  const mapDispatchToProps = dispatch => {
+};
+
+const mapDispatchToProps = dispatch => {
     return {
-      getLink: () => {
-        dispatch(action.get_links());
-      }
+        getLink: () => {
+            dispatch(action.get_links());
+        }
     };
-  };
-   
-  export default connect(
+};
+
+export default connect(
     mapStateToProps,
     mapDispatchToProps
-  )(Link);
+)(Link);

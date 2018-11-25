@@ -46,10 +46,10 @@ class Profail extends Component {
             var x = List.map(num => (
                 <tbody key={num.id}>
                     <tr>
-                        <td>{num.id}</td>
-                        <td>{num.name}</td>
+                        <td className="id">{num.id}</td>
+                        <td className="name">{num.name}</td>
                         <td>{num.email}</td>
-                        <td><a href="#" data-id={num.id} onClick={e => this.delete_user(e)}>delete</a></td>
+                        <td> <Link to="#" data-id={num.id} onClick={e => this.delete_user(e)}>delete</Link></td>
                         <td><Link to={`/edit/${num.id}`} >edit</Link></td>
                     </tr>
                 </tbody>
@@ -64,8 +64,8 @@ class Profail extends Component {
                     <table>
                         <thead>
                             <tr>
-                                <th>id</th>
-                                <th>name</th>
+                                <th className="id">id</th>
+                                <th className="id">name</th>
                                 <th>email</th>
                                 <th>delete</th>
                                 <th>edit</th>
